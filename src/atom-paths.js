@@ -23,7 +23,7 @@ const getAppDirectory = () => {
 }
 
 module.exports = {
-  setAtomHome: (homePath) => {
+  setAtomHome: (homeyPath) => {
     // When a read-writeable .atom folder exists above app use that
     const portableHomePath = path.join(getAppDirectory(), '..', '.atom')
     if (fs.existsSync(portableHomePath)) {
